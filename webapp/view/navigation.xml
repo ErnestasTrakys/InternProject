@@ -1,0 +1,7 @@
+<navigation>
+    <category name="Upload" link="path of the page"></category>
+    <category name="Friends" link="path of the page"></category>
+    <category name="Notifications" link="path of the page"></category>
+    <category name="Profile" link="path of the page"></category>
+    <category name="Settings" link="path of the page"></category>
+ </navigation>

@@ -1,9 +1,16 @@
 /* Enter your custom styles here */
-.center {
+.container {
     margin: auto;
     width: 60%;
+    height: 20px;
     padding: 10px;
     padding-top: 10%;
     border: 5px solid #FFFF00;
-    position: absolute;
+    position: center;
     }
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

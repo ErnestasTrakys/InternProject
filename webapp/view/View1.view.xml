@@ -1,7 +1,86 @@
 <mvc:View controllerName="visionBoardProject.internproject.controller.View1"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
-        <content />
-    </Page>
+
+           
+            <App>
+        <pages>
+            <Page title="{i18n>title}" >
+                <content>
+                    <Panel headerText="Hello">
+                    <content>
+                    <SearchField liveChange=".onSearch"/>
+                    <Table 
+                                id="userSelectionTable"
+                                items="{/value}">
+                                <columns>
+                                    <Column>
+                                        <Text text="{i18n>Upload}" />
+                                    </Column>
+                                    <Column>
+                                        <Text text="{i18n>Friends}" />
+                                    </Column>
+                                    <Column>
+                                        <Text text="{i18n>Notifications}" />
+                                    </Column>
+                                    <Column>
+                                        <Text text="{i18n>Profile}" />
+                                    </Column>
+                                    <Column>
+                                        <Text text="{i18n>Settings}" />
+                                    </Column>
+                                </columns>
+                                <items>
+                                    <ColumnListItem 
+                                        vAlign="Middle"
+                                        press=".onSelect"
+                                        type="Active">
+                                        
+                                       
+                                    </ColumnListItem>
+                                </items>
+                            </Table>
+                                <!-- <NavBar>
+                            <Public>
+                                <ButtonLink>../ChapterMenu.aspx</ButtonLink>
+                            </Public>
+                                </NavBar> -->
+
+                           
+                        <p>hi</p>
+                        </content>
+                    </Panel>
+                    
+                </content>
+            </Page>
+        </pages>
+    </App>
+
+  
 </mvc:View>
+
+
+
+
+
+
+
+
+<!-- 
+
+
+<pages>
+        <Page id="page" title="{i18n>title}">
+             <content>
+             <Panel headerText="Hello!!!">
+            <Table id="contentSelection" items="{/value}" >
+                <columns>
+                    <Column>
+                        <Text text="1"/>
+                    </Column>
+                </columns>
+                 </Table>
+                  </Panel>
+            </content>
+                 </Page>
+            </pages> -->
