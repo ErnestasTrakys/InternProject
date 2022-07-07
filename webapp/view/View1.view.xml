@@ -29,14 +29,15 @@
                                         <Button text="{i18n>Settings}" press=".onSubmitRoute" />
                                     </Column>
                                 </columns>
+
+
                                 <SearchField liveChange=".onSearch"/>
-                               
                             </Table>
                             <SearchField liveChange=".onSearch"/>
                                 <FlexBox direction="Column" class="sapUiMediumMarginTop">
                                     <FlexBox alignItems="Center" justifyContent="End" class="pageControls" >
                                         <ObjectStatus id="searchStatus" text="" />
-                                        <Button text="Search" press=".onSubmitSearch" />                  
+                                        <!-- <Button text="Search" press=".onSubmitSearch" />                   -->
                                     </FlexBox>
                                 </FlexBox>
                                 
@@ -53,29 +54,3 @@
 
   
 </mvc:View>
-
-
-
-
-
-
-
-
-<!-- 
-
-
-<pages>
-        <Page id="page" title="{i18n>title}">
-             <content>
-             <Panel headerText="Hello!!!">
-            <Table id="contentSelection" items="{/value}" >
-                <columns>
-                    <Column>
-                        <Text text="1"/>
-                    </Column>
-                </columns>
-                 </Table>
-                  </Panel>
-            </content>
-                 </Page>
-            </pages> -->
