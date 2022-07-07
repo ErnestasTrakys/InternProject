@@ -9,43 +9,38 @@
                 <content>
                     <Panel headerText="Hello">
                     <content>
-                    <SearchField liveChange=".onSearch"/>
                     <Table 
                                 id="userSelectionTable"
                                 items="{/value}">
                                 <columns>
                                     <Column>
-                                        <Text text="{i18n>Upload}" />
+                                        <Button text="{i18n>Upload}" press=".onSubmitRoute" />
                                     </Column>
                                     <Column>
-                                        <Text text="{i18n>Friends}" />
+                                        <Button text="{i18n>Friends}" press=".onSubmitRoute" />
                                     </Column>
                                     <Column>
-                                        <Text text="{i18n>Notifications}" />
+                                        <Button text="{i18n>Notifications}" press=".onSubmitRoute" />
                                     </Column>
                                     <Column>
-                                        <Text text="{i18n>Profile}" />
+                                        <Button text="{i18n>Profile}" press=".onSubmitRoute" />
                                     </Column>
                                     <Column>
-                                        <Text text="{i18n>Settings}" />
+                                        <Button text="{i18n>Settings}" press=".onSubmitRoute" />
                                     </Column>
                                 </columns>
-                                <items>
-                                    <ColumnListItem 
-                                        vAlign="Middle"
-                                        press=".onSelect"
-                                        type="Active">
-                                        
-                                       
-                                    </ColumnListItem>
-                                </items>
+                                <SearchField liveChange=".onSearch"/>
+                               
                             </Table>
-                                <!-- <NavBar>
-                            <Public>
-                                <ButtonLink>../ChapterMenu.aspx</ButtonLink>
-                            </Public>
-                                </NavBar> -->
-
+                            <SearchField liveChange=".onSearch"/>
+                                <FlexBox direction="Column" class="sapUiMediumMarginTop">
+                                    <FlexBox alignItems="Center" justifyContent="End" class="pageControls" >
+                                        <ObjectStatus id="searchStatus" text="" />
+                                        <Button text="Search" press=".onSubmitSearch" />                  
+                                    </FlexBox>
+                                </FlexBox>
+                                
+                                
                            
                         
                         </content>
