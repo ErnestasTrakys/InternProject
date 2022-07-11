@@ -14,7 +14,7 @@
                                 items="{/value}">
                                 <columns>
                                     <Column>
-                                        <Button text="{i18n>Upload}" press=".onSubmitRoute" />
+                                        <Button id="yo" text="{i18n>Upload}" press=".onSubmitRoute" />
                                     </Column>
                                     <Column>
                                         <Button text="{i18n>Friends}" press=".onSubmitRoute" />
