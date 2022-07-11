@@ -16,22 +16,23 @@ sap.ui.define([
             },
             onSubmitRoute: function () {
                 let oModel = this.getView().getModel("userSelection")
-                let selectedModelPath = oEvent.getSource().getBindingContext().sPath
+                let selectedModelPath = oEvent.getSource().getBindingContext().sPath //not 100% but control's 'click'
                 oModel.setProperty("/selectedItemPath", selectedModelPath)
 
                 let reqSettings = {
-                    "url" : "/browse/"
+                    "url" : "/browse/", //need to route
+                    "method": "POST", //<-probably wrong
                 }
             },
 
             onSearch: function (oEvent) {
-                var aFilter = [];
+                var aFilter = []; //filter options not created
                 var sQuery = oEvent.getParameter("newValue");
                 if (sQuery) {
                     aFilter.push(new Filter("title", FilterOperator.Contains, sQuery));
                 }
-                var oList = this.byId("userGroup");
-                var oBinding = oList.getBinding("items");
+                var oList = this.byId("userGroup"); //userGroup, a db of usernames
+                var oBinding = oList.getBinding("items"); //items not in xml yet
                 oBinding.filter(aFilter);
             }
 
