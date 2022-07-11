@@ -14,15 +14,37 @@ sap.ui.define([
             onInit: function () {
                 
             },
-            onSubmitRoute: function () {
-                let oModel = this.getView().getModel("userSelection")
-                let selectedModelPath = oEvent.getSource().getBindingContext().sPath //not 100% but control's 'click'
-                oModel.setProperty("/selectedItemPath", selectedModelPath)
+            // onSubmitRoute: function () {
+            //     let oModel = this.getView().getModel("userSelection")
+            //     let selectedModelPath = oEvent.getSource().getBindingContext().sPath //not 100% but control's 'click'
+            //     oModel.setProperty("/selectedItemPath", selectedModelPath)
 
-                let reqSettings = {
-                    "url" : "/browse/", //need to route
-                    "method": "POST", //<-probably wrong
-                }
+            //     let reqSettings = {
+            //         "url" : "/browse/", //need to route
+            //         "method": "POST", //<-probably wrong
+            //     }
+
+
+            // },
+
+            uploadRoute: function () {
+                location.href = "https://port8080-workspaces-ws-4kj4r.eu10.applicationstudio.cloud.sap/test/flpSandbox.html?sap-ui-xx-viewCache=false#Shell-home"
+            },
+
+            friendsRoute: function () {
+                location.href = "https://port8080-workspaces-ws-4kj4r.eu10.applicationstudio.cloud.sap/test/flpSandbox.html?sap-ui-xx-viewCache=false#Shell-home"
+            },
+
+            notificationsRoute: function () {
+                location.href = "https://port8080-workspaces-ws-4kj4r.eu10.applicationstudio.cloud.sap/test/flpSandbox.html?sap-ui-xx-viewCache=false#Shell-home"
+            },
+
+            profileRoute: function () {
+                location.href = "https://port8080-workspaces-ws-4kj4r.eu10.applicationstudio.cloud.sap/test/flpSandbox.html?sap-ui-xx-viewCache=false#Shell-home"
+            },
+
+            settingsRoute: function () {
+                location.href = "https://port8080-workspaces-ws-4kj4r.eu10.applicationstudio.cloud.sap/test/flpSandbox.html?sap-ui-xx-viewCache=false#Shell-home"
             },
 
             onSearch: function (oEvent) {

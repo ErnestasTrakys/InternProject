@@ -14,19 +14,19 @@
                                 items="{/value}">
                                 <columns>
                                     <Column>
-                                        <Button text="{i18n>Upload}" press=".onSubmitRoute" />
+                                        <Button id="uploadButton" text="{i18n>Upload}" press=".uploadRoute" />
                                     </Column>
                                     <Column>
-                                        <Button text="{i18n>Friends}" press=".onSubmitRoute" />
+                                        <Button id="friendsButton" text="{i18n>Friends}" press=".friendsRoute" />
                                     </Column>
                                     <Column>
-                                        <Button text="{i18n>Notifications}" press=".onSubmitRoute" />
+                                        <Button id="notificationsButton" text="{i18n>Notifications}" press=".notificationsRoute" />
                                     </Column>
                                     <Column>
-                                        <Button text="{i18n>Profile}" press=".onSubmitRoute" />
+                                        <Button id="profileButton" text="{i18n>Profile}" press=".profileRoute" />
                                     </Column>
                                     <Column>
-                                        <Button text="{i18n>Settings}" press=".onSubmitRoute" />
+                                        <Button id="settingsButton" text="{i18n>Settings}" press=".settingsRoute" />
                                     </Column>
                                 </columns>
 
