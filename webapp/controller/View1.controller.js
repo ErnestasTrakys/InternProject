@@ -27,8 +27,13 @@ sap.ui.define([
 
             // },
 
-            uploadRoute: function () {
-                location.href = "https://port8080-workspaces-ws-4kj4r.eu10.applicationstudio.cloud.sap/test/flpSandbox.html?sap-ui-xx-viewCache=false#Shell-home"
+            uploadRoute: function (oEvent) {
+                // location.href = "https://port8080-workspaces-ws-4kj4r.eu10.applicationstudio.cloud.sap/test/flpSandbox.html?sap-ui-xx-viewCache=false#Shell-home"
+                
+                var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+			    return oRouter.navTo("Upload", {} );
+
+                
             },
 
             friendsRoute: function () {
