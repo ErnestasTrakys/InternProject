@@ -14,7 +14,6 @@
                                 items="{/value}">
                                 <columns>
                                     <Column>
-                                        <Button id="Test02" text="{i18n>Upload}" press=".uploadRoute" />
                                         <Button id="uploadButton" text="{i18n>Upload}" press=".uploadRoute" />
                                     </Column>
                                     <Column>
