@@ -3,18 +3,17 @@
     xmlns="sap.m">
 
            
-            <App>
+        <App>
         <pages>
             <Page title="{i18n>title}" >
                 <content>
                     <Panel headerText="Hello">
                     <content>
                     <Table 
-                                id="userSelectionTable"
-                                items="{/value}">
+                            id="userSelectionTable"
+                            items="{/value}">
                                 <columns>
                                     <Column>
-                                        <Button id="Test05" text="{i18n>Upload}" press=".uploadRoute" />
                                         <Button id="uploadButton" text="{i18n>Upload}" press=".uploadRoute" />
                                     </Column>
                                     <Column>
@@ -24,16 +23,15 @@
                                         <Button id="notificationsButton" text="{i18n>Notifications}" press=".notificationsRoute" />
                                     </Column>
                                     <Column>
-                                        <Button id="profileButton" text="{i18n>Profile}" press=".profileRoute" />
+                                        <Button id="profileButton" text="{i18n>Profiles}" press=".profileRoute" />
                                     </Column>
                                     <Column>
                                         <Button id="settingsButton" text="{i18n>Settings}" press=".settingsRoute" />
                                     </Column>
                                 </columns>
-
-
                                 <SearchField liveChange=".onSearch"/>
                             </Table>
+                            
                             <SearchField liveChange=".onSearch"/>
                                 <FlexBox direction="Column" class="sapUiMediumMarginTop">
                                     <FlexBox alignItems="Center" justifyContent="End" class="pageControls" >
@@ -53,5 +51,6 @@
         </pages>
     </App>
 
+    
   
 </mvc:View>
