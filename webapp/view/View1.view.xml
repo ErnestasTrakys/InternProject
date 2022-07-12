@@ -13,19 +13,19 @@
                             id="userSelectionTable"
                             items="{/value}">
                                 <columns>
-                                    <Column>
+                                    <Column width="290px">
                                         <Button id="uploadButton" text="{i18n>Upload}" press=".uploadRoute" />
                                     </Column>
-                                    <Column>
+                                    <Column width="290px">
                                         <Button id="friendsButton" text="{i18n>Friends}" press=".friendsRoute" />
                                     </Column>
-                                    <Column>
+                                    <Column width="290px">
                                         <Button id="notificationsButton" text="{i18n>Notifications}" press=".notificationsRoute" />
                                     </Column>
-                                    <Column>
+                                    <Column width="290px">
                                         <Button id="profileButton" text="{i18n>Profiles}" press=".profileRoute" />
                                     </Column>
-                                    <Column>
+                                    <Column width="290px">
                                         <Button id="settingsButton" text="{i18n>Settings}" press=".settingsRoute" />
                                     </Column>
                                 </columns>
