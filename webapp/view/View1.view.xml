@@ -22,7 +22,7 @@
                                     <Column>
                                         <Button id="notificationsButton" text="{i18n>Notifications}" press=".notificationsRoute" class="sapUiTinyMarginEnd" />
                                     </Column>
-                                    <Column>
+                                    <Column >
                                         <Button id="profileButton" text="{i18n>Profile}" press=".profileRoute" />
                                     </Column>
                                     
@@ -31,7 +31,7 @@
 
                                 <SearchField liveChange=".onSearch"/>
                             </Table>
-                            
+
                             <SearchField liveChange=".onSearch"/>
                                 <FlexBox direction="Column" class="sapUiMediumMarginTop">
                                     <FlexBox alignItems="Center" justifyContent="End" class="pageControls" >
