@@ -25,7 +25,10 @@ sap.ui.define([
 		},
         uploadRoute: function () {
                
-            this.getRouter().getTargets().display("TargetUpload");
+            // this.getRouter().getTargets().display("TargetUpload");
+            location.href = "../view/UploadPicture.html"
+
+
         },
         homeRoute: function () {
                

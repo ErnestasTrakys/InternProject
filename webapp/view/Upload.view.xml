@@ -32,10 +32,9 @@
                                 <SearchField liveChange=".onSearch"/>
                             </Table>
                             
-                            <FlexBox direction="Column" class="sapUiMediumMarginTop">
-                                <FlexBox alignItems="Center" justifyContent="End" class="pageControls" >
-                                    <ObjectStatus id="searchStatus" text="" />
-                                </FlexBox>
+                            <FlexBox direction="Column" class="sapUiLargeMarginTop">
+                                <Button id="image_input" text="Upload File" press=".uploadPicture" class="sapUiLargeMarginEnd" />
+                                <input type="file" id="image_input" accept="image/png, image/jpg"/>
                             </FlexBox>
                             
                                 
@@ -43,6 +42,7 @@
                         
                         </content>
                     </Panel>
+
                     
                 </content>
             </Page>
