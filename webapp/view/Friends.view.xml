@@ -2,7 +2,6 @@
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m">
 
-    
     <App>
         <pages>
             <Page title="{i18n>title}" >
@@ -24,27 +23,19 @@
                                     </Column>
                                     <Column>
                                         <Button id="profileButton" text="{i18n>Profile}" press=".profileRoute" />
-                                    </Column>
-                                
-                                    
+                                    </Column>      
                                 </columns>
-
-
                                 <SearchField liveChange=".onSearch"/>
                             </Table>
                             
-                            <FlexBox direction="Column" class="sapUiMediumMarginTop">
-                                <FlexBox alignItems="Center" justifyContent="End" class="pageControls" >
-                                    <ObjectStatus id="searchStatus" text="" />
+                            <SearchField liveChange=".onSearch"/>
+                                <FlexBox direction="Column" class="sapUiMediumMarginTop">
+                                    <FlexBox alignItems="Center" justifyContent="End" class="pageControls" >
+                                        <ObjectStatus id="searchStatus" text="" />
+                                    </FlexBox>
                                 </FlexBox>
-                            </FlexBox>
-                            
-                                
-                           
-                        
                         </content>
                     </Panel>
-                    
                 </content>
             </Page>
         </pages>
