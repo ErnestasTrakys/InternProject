@@ -11,13 +11,12 @@ sap.ui.define([
     function (BaseController) {
         "use strict";
 
-        return BaseController.extend("visionBoardProject.internproject.controller.Upload", {
+        return BaseController.extend("visionBoardProject.internproject.controller.Profile", {
             onInit: function () {
                 
             },
 
-            
-
+           
             
            
         });

@@ -1,14 +1,16 @@
 sap.ui.define(
     [
-        "sap/ui/core/mvc/Controller"
+        "visionBoardProject/internproject/controller/BaseController"
     ],
     function(BaseController) {
       "use strict";
   
-      return BaseController.extend("visionBoardProject.internproject.controller.controller.App", {
+      return BaseController.extend("visionBoardProject.internproject.controller.App", {
         onInit() {
-        }
+        },
+        
       });
+      
     }
   );
   

@@ -1,43 +1,43 @@
-<mvc:View controllerName="visionBoardProject.internproject.controller.View1"
+<mvc:View controllerName="visionBoardProject.internproject.controller.Notifications"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m">
 
-           
-            <App>
+    
+    <App>
         <pages>
             <Page title="{i18n>title}" >
                 <content>
-                    <Panel headerText="Home">
+                    <Panel headerText="Notifications">
                     <content>
                     <Table 
                                 id="userSelectionTable"
                                 items="{/value}">
                                 <columns>
                                     <Column>
-                                        <Button id="uploadButton" text="{i18n>Upload}" press=".uploadRoute" class="sapUiTinyMarginEnd" />
+                                        <Button id="uploadButton" text="{i18n>Upload}" press=".uploadRoute" />
                                     </Column>
                                     <Column>
-                                        <Button id="friendsButton" text="{i18n>Friends}" press=".friendsRoute" class="sapUiTinyMarginEnd" />
+                                        <Button id="friendsButton" text="{i18n>Friends}" press=".friendsRoute" />
                                     </Column>
                                     <Column>
-                                        <Button id="notificationsButton" text="{i18n>Notifications}" press=".notificationsRoute" class="sapUiTinyMarginEnd" />
+                                        <Button id="homeButton" text="{i18n>Home}" press=".homeRoute" />
                                     </Column>
                                     <Column>
                                         <Button id="profileButton" text="{i18n>Profile}" press=".profileRoute" />
                                     </Column>
-                                    
+                                   
                                 </columns>
 
 
                                 <SearchField liveChange=".onSearch"/>
                             </Table>
-                            <SearchField liveChange=".onSearch"/>
-                                <FlexBox direction="Column" class="sapUiMediumMarginTop">
-                                    <FlexBox alignItems="Center" justifyContent="End" class="pageControls" >
-                                        <ObjectStatus id="searchStatus" text="" />
-                                    </FlexBox>
+                            
+                            <FlexBox direction="Column" class="sapUiMediumMarginTop">
+                                <FlexBox alignItems="Center" justifyContent="End" class="pageControls" >
+                                    <ObjectStatus id="searchStatus" text="" />
                                 </FlexBox>
-                                
+                            </FlexBox>
+                            
                                 
                            
                         
@@ -49,5 +49,4 @@
         </pages>
     </App>
 
-  
 </mvc:View>

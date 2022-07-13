@@ -90,7 +90,12 @@
         "viewPath": "visionBoardProject.internproject.view",
         "controlAggregation": "pages",
         "controlId": "app",
-        "clearControlAggregation": false
+        "clearControlAggregation": false,
+        "type": "View",
+        "bypassed": {
+            "target": "notFound"
+        }
+        
       },
       "routes": [
         {
@@ -102,9 +107,30 @@
         },
         {
             "name": "RouteUpload",
-            "pattern": ":?query:",
+            "pattern": "visionBoardProject.internproject.view",
             "target": [
               "TargetUpload"
+            ]
+          },
+          {
+            "name": "RouteFriends",
+            "pattern": "visionBoardProject.internproject.view",
+            "target": [
+              "TargetFriends"
+            ]
+          },
+          {
+            "name": "RouteNotifications",
+            "pattern": "visionBoardProject.internproject.view",
+            "target": [
+              "TargetNotifications"
+            ]
+          },
+          {
+            "name": "RouteProfile",
+            "pattern": "visionBoardProject.internproject.view",
+            "target": [
+              "TargetProfile"
             ]
           }
       ],
@@ -113,6 +139,7 @@
           "viewType": "XML",
           "transition": "slide",
           "clearControlAggregation": false,
+          "controlAggregation": "pages",
           "viewId": "View1",
           "viewName": "View1"
         },
@@ -120,10 +147,40 @@
               "viewType": "XML",
               "transition": "slide",
               "clearControlAggregation": false,
+              "controlAggregation": "pages",
               "viewId": "Upload",
               "viewName": "Upload"
+            },
+            "TargetFriends": {
+                "viewType": "XML",
+                "transition": "slide",
+                "clearControlAggregation": false,
+                "controlAggregation": "pages",
+                "viewId": "Friends",
+                "viewName": "Friends"
+              },
+            "notFound": {
+               "id": "notFound",
+               "name": "NotFound",
+               "transition": "show"
+            },
+            "TargetNotifications": {
+                "viewType": "XML",
+                "transition": "slide",
+                "clearControlAggregation": false,
+                "controlAggregation": "pages",
+                "viewId": "Notifications",
+                "viewName": "Notifications"
+              },
+              "TargetProfile": {
+                  "viewType": "XML",
+                  "transition": "slide",
+                  "clearControlAggregation": false,
+                  "controlAggregation": "pages",
+                  "viewId": "Profile",
+                  "viewName": "Profile"
+              }
             }
-          }
       
       
     },
@@ -135,3 +192,4 @@
     }
   }
 }
+
