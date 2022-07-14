@@ -14,16 +14,16 @@
                                 items="{/value}">
                                 <columns>
                                     <Column>
-                                        <Button id="uploadButton" text="{i18n>Upload}" press=".uploadRoute" class="sapUiTinyMarginEnd" />
+                                        <Button id="uploadButton" icon="{i18n>/icons/upload.gif}" text="{i18n>Upload}" press=".uploadRoute" class="sapUiTinyMarginEnd" />
                                     </Column>
                                     <Column>
-                                        <Button id="friendsButton" text="{i18n>Friends}" press=".friendsRoute" class="sapUiTinyMarginEnd" />
+                                        <Button id="friendsButton" icon="{i18n>/icons/friends.gif}" text="{i18n>Friends}" press=".friendsRoute" class="sapUiTinyMarginEnd" />
                                     </Column>
                                     <Column>
-                                        <Button id="notificationsButton" text="{i18n>Notifications}" press=".notificationsRoute" class="sapUiTinyMarginEnd" />
+                                        <Button id="notificationsButton" icon="{i18n>/icons/notif.gif}" text="{i18n>Notifications}" press=".notificationsRoute" class="sapUiTinyMarginEnd" />
                                     </Column>
                                     <Column>
-                                        <Button id="profileButton" text="{i18n>Profile}" press=".profileRoute" />
+                                        <Button id="profileButton" icon="{i18n>/icons/profile.gif}" text="{i18n>Profile}" press=".profileRoute" />
                                     </Column>
                                     
                                 </columns>
