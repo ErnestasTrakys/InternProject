@@ -23,11 +23,10 @@
                                         <Button id="notificationsButton" icon="{i18n>/icons/notif.gif}" text="{i18n>Notifications}" press=".notificationsRoute" class="sapUiTinyMarginEnd" />
                                     </Column>
                                     <Column >
-                                        <Button id="profileButton" text="{i18n>Profile}" press=".profileRoute" />
+                                        <Button id="profileButton" icon="{i18n>/icons/profile.gif}" text="{i18n>Profile}" press=".profileRoute" />
                                     </Column>
                                     
                                 </columns>
-                            <!-- TEST TEST TESt-->
 
                                 <SearchField liveChange=".onSearch"/>
                             </Table>
