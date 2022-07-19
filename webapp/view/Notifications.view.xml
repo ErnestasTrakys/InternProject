@@ -14,16 +14,16 @@
                                 items="{/value}">
                                 <columns>
                                     <Column>
-                                        <Button id="uploadButton" icon="{i18n>/icons/upload.gif}" text="{i18n>Upload}" press=".uploadRoute" />
+                                        <Button id="uploadButton" icon="{i18n>sap-icon://upload}" text="{i18n>Upload}" press=".uploadRoute" />
                                     </Column>
                                     <Column>
-                                        <Button id="friendsButton" icon="{i18n>/icons/friends.gif}" text="{i18n>Friends}" press=".friendsRoute" />
+                                        <Button id="friendsButton" icon="{i18n>sap-icon://group}" text="{i18n>Friends}" press=".friendsRoute" />
                                     </Column>
                                     <Column>
-                                        <Button id="homeButton" icon="{i18n>/icons/home.gif}" text="{i18n>Home}" press=".homeRoute" />
+                                        <Button id="homeButton" icon="{i18n>sap-icon://home}" text="{i18n>Home}" press=".homeRoute" />
                                     </Column>
                                     <Column>
-                                        <Button id="profileButton" icon="{i18n>/icons/profile.gif}" text="{i18n>Profile}" press=".profileRoute" />
+                                        <Button id="profileButton" icon="{i18n>sap-icon://customer}" text="{i18n>Profile}" press=".profileRoute" />
                                     </Column>
                                    
                                 </columns>
