@@ -32,8 +32,7 @@
                             </Table>
                             
                             <FlexBox direction="Column" class="sapUiLargeMarginTop">
-                                <Button id="image_input" text="Upload File" press=".uploadPicture" class="sapUiLargeMarginEnd" />
-                                <input type="file" id="image_input" accept="image/png, image/jpg"/>
+                                
                             </FlexBox>
                             
                                 
@@ -44,6 +43,20 @@
 
                     
                 </content>
+                <UploadCollection
+			id="UploadCollection"
+			uploadComplete="onUploadComplete"
+			fileDeleted="onFileDeleted">
+			<toolbar>
+				<OverflowToolbar>
+					<Breadcrumbs id="breadcrumbs" currentLocationText="{/currentLocationText}" links="{/history}">
+						<Link press="onBreadcrumbPress" text="{name}" />
+					</Breadcrumbs>
+					<ToolbarSpacer />
+					<UploadCollectionToolbarPlaceholder />
+				</OverflowToolbar>
+			</toolbar>
+		</UploadCollection>
             </Page>
         </pages>
     </App>
