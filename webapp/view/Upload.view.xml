@@ -34,13 +34,10 @@
                             <FlexBox direction="Column" class="sapUiLargeMarginTop">
                                 
                             </FlexBox>
-                            
-                                
-                           
+                                        
                         
                         </content>
                     </Panel>
-
                     
                 </content>
                 <UploadCollection
@@ -56,7 +53,7 @@
 					<UploadCollectionToolbarPlaceholder />
 				</OverflowToolbar>
 			</toolbar>
-		</UploadCollection>
+		</UploadCollection>      
             </Page>
         </pages>
     </App>
