@@ -17,8 +17,12 @@ sap.ui.define([
 
         return BaseController.extend("visionBoardProject.internproject.controller.Upload", {
             onInit: function () {
-           // this.oModel = new JSONModel(sap.ui.require.toUrl("visionBoardProject/internproject/data/UploadCollectionData.json")); <-- cant figure out the route to file
+            //var sPath = sap.ui.require.toUrl("visionBoardProject/internproject/data/UploadCollectionData.json");
+            // this.oModel = new JSONModel(sap.ui.require.toUrl("visionBoardProject/internproject/data/UploadCollectionData.json")); 
+           // this.oModel = new JSONModel(sap.ui.require.toUrl("internproject/UploadCollectionData.json")); 
+
 			this.getView().setModel(this.oModel);
+            //this.getView().setModel(new JSONModel(sPath));
 
 			this.oUploadCollection = this.byId("UploadCollection");
 			this.oBreadcrumbs = this.byId("breadcrumbs");

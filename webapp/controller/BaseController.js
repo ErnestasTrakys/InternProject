@@ -46,10 +46,6 @@ sap.ui.define([
         profileRoute: function () {
             this.getRouter().getTargets().display("TargetProfile");        },
 
-        settingsRoute: function () {
-            location.href = "https://port8080-workspaces-ws-4kj4r.eu10.applicationstudio.cloud.sap/test/flpSandbox.html?sap-ui-xx-viewCache=false#Shell-home"
-        },
-
         onSearch: function (oEvent) {
             var aFilter = []; //filter options not created
             var sQuery = oEvent.getParameter("newValue");

@@ -1,4 +1,4 @@
-<mvc:View controllerName="visionBoardProject.internproject.controller.Upload"
+<mvc:View controllerName="visionBoardProject.internproject.controller.Friends"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m">
 

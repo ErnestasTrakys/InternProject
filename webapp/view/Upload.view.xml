@@ -57,6 +57,14 @@
 				</OverflowToolbar>
 			</toolbar>
 		</UploadCollection>
+        <Input
+			placeholder="About Upload..."
+			ariaDescribedBy="descriptionNodeId"
+			description=""
+			width="400px"
+			fieldWidth="75%"
+            showClearIcon="true"
+			class="sapUiSmallMarginBottom" />
             </Page>
         </pages>
     </App>
