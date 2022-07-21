@@ -9,6 +9,7 @@
                 <content>
                     <Panel headerText="Profile">
                     <content>
+                    <ScrollContainer height='100rem' vertical='true'>
                     <Table 
                                 id="userSelectionTable"
                                 items="{/value}">
@@ -36,7 +37,7 @@
                                     <ObjectStatus id="searchStatus" text="" />
                                 </FlexBox>
                             </FlexBox>
-                            
+                    </ScrollContainer>        
                                 
                            
                         

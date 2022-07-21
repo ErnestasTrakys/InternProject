@@ -7,33 +7,34 @@
             <Page title="{i18n>title}" >
                 <content>
                     <Panel headerText="Friends">
-                    <content>
-                    <Table 
-                                id="userSelectionTable"
-                                items="{/value}">
-                                <columns>
-                                    <Column>
-                                        <Button id="uploadButton" icon="{i18n>sap-icon://upload}" text="{i18n>Upload}" press=".uploadRoute" />
-                                    </Column>
-                                    <Column>
-                                        <Button id="homeButton" icon="{i18n>sap-icon://home}" text="{i18n>Home}" press=".homeRoute" />
-                                    </Column>
-                                    <Column>
-                                        <Button id="notificationsButton" icon="{i18n>sap-icon://bell}" text="{i18n>Notifications}" press=".notificationsRoute" />
-                                    </Column>
-                                    <Column>
-                                        <Button id="profileButton" icon="{i18n>sap-icon://customer}" text="{i18n>Profile}" press=".profileRoute" />
-                                    </Column>      
-                                </columns>
-                                <SearchField liveChange=".onSearch"/>
-                            </Table>
-                            
-                            <SearchField liveChange=".onSearch"/>
-                                <FlexBox direction="Column" class="sapUiMediumMarginTop">
-                                    <FlexBox alignItems="Center" justifyContent="End" class="pageControls" >
-                                        <ObjectStatus id="searchStatus" text="" />
-                                    </FlexBox>
-                                </FlexBox>
+                        <content>
+                            <ScrollContainer height='100rem' vertical='true'>
+                                <Table 
+                                        id="userSelectionTable"
+                                        items="{/value}">
+                                        <columns>
+                                            <Column>
+                                                <Button id="uploadButton" icon="{i18n>sap-icon://upload}" text="{i18n>Upload}" press=".uploadRoute" />
+                                            </Column>
+                                            <Column>
+                                                <Button id="homeButton" icon="{i18n>sap-icon://home}" text="{i18n>Home}" press=".homeRoute" />
+                                            </Column>
+                                            <Column>
+                                                <Button id="notificationsButton" icon="{i18n>sap-icon://bell}" text="{i18n>Notifications}" press=".notificationsRoute" />
+                                            </Column>
+                                            <Column>
+                                                <Button id="profileButton" icon="{i18n>sap-icon://customer}" text="{i18n>Profile}" press=".profileRoute" />
+                                            </Column>      
+                                        </columns>
+                                    <SearchField liveChange=".onSearch"/>
+                                </Table>
+                                    
+                                        <FlexBox direction="Column" class="sapUiMediumMarginTop">
+                                            <FlexBox alignItems="Center" justifyContent="End" class="pageControls" >
+                                                <ObjectStatus id="searchStatus" text="" />
+                                            </FlexBox>
+                                        </FlexBox>
+                            </ScrollContainer>
                         </content>
                     </Panel>
                 </content>

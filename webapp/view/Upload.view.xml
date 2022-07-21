@@ -34,13 +34,10 @@
                             <FlexBox direction="Column" class="sapUiLargeMarginTop">
                                 
                             </FlexBox>
-                            
-                                
-                           
+                                        
                         
                         </content>
                     </Panel>
-
                     
                 </content>
                 <UploadCollection
@@ -56,7 +53,7 @@
 					<UploadCollectionToolbarPlaceholder />
 				</OverflowToolbar>
 			</toolbar>
-		</UploadCollection>
+		</UploadCollection> 
         <Input
 			placeholder="About Upload..."
 			ariaDescribedBy="descriptionNodeId"
@@ -65,6 +62,7 @@
 			fieldWidth="75%"
             showClearIcon="true"
 			class="sapUiSmallMarginBottom" />
+		     
             </Page>
         </pages>
     </App>
