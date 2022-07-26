@@ -3,7 +3,8 @@
                  "email":"jordan.murphy01@sap.com", 
                  "password":"test1", 
                  "age":20, 
-                 "city":"Dublin"},
+                 "city":"Dublin",
+                 "numberOfLikes":123},
                  "jordanFriends":[{
                         "name":"gabriel",
                         "password":"test2",
@@ -15,7 +16,8 @@
                  "email":"gabriel.ariesan@sap.com", 
                  "password":"test2", 
                  "age":20, 
-                 "city":"Dublin"},
+                 "city":"Dublin",
+                 "numberOfLikes":456},
                  "gabrielFriends":[{
                     "name":"megan",
                     "password":"test3",
@@ -27,7 +29,8 @@
                  "email":"megan.cash@sap.com", 
                  "password":"test3", 
                  "age":20, 
-                 "city":"Dublin"},
+                 "city":"Dublin",
+                 "numberOfLikes":789},
                  "meganFriends":[{
                     "name":"niamh",
                     "password":"test4",
@@ -39,7 +42,8 @@
                  "email":"niamh.grady@sap.com", 
                  "password":"test4", 
                  "age":20, 
-                 "city":"Dublin"},
+                 "city":"Dublin",
+                 "numberOfLikes":123},
                  "niamhFriends":[{
                     "name":"ernestas",
                     "password":"test5",
@@ -51,7 +55,8 @@
                  "email":"ernestas.trakys@sap.com", 
                  "password":"test5", 
                  "age":20, 
-                 "city":"Dublin"},
+                 "city":"Dublin",
+                 "numberOfLikes":456},
                  "ernestasFriends":[{
                     "name":"jordan",
                     "password":"test1",
