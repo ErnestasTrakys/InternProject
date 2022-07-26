@@ -1,11 +1,61 @@
 {
-    "employee1":{"name":"jordan", "email":"jordan.murphy01@sap.com", "password":"test1", "age":20, "city":"Dublin"},
+    "employee1":{"name":"jordan", 
+                 "email":"jordan.murphy01@sap.com", 
+                 "password":"test1", 
+                 "age":20, 
+                 "city":"Dublin"},
+                 "jordanFriends":[{
+                        "name":"gabriel",
+                        "password":"test2",
+                        "age":20,
+                        "city":"Dublin"
+                 }],
 
-    "employee2":{"name":"gabriel", "email":"gabriel.ariesan@sap.com", "password":"test2", "age":20, "city":"Dublin"},
+    "employee2":{"name":"gabriel", 
+                 "email":"gabriel.ariesan@sap.com", 
+                 "password":"test2", 
+                 "age":20, 
+                 "city":"Dublin"},
+                 "gabrielFriends":[{
+                    "name":"megan",
+                    "password":"test3",
+                    "age":20,
+                    "city":"Dublin"
+             }],
 
-    "employee3":{"name":"megan", "email":"megan.cash@sap.com", "password":"test3", "age":20, "city":"Dublin"},
+    "employee3":{"name":"megan", 
+                 "email":"megan.cash@sap.com", 
+                 "password":"test3", 
+                 "age":20, 
+                 "city":"Dublin"},
+                 "meganFriends":[{
+                    "name":"niamh",
+                    "password":"test4",
+                    "age":20,
+                    "city":"Dublin"
+             }],
 
-    "employee4":{"name":"niamh", "email":"niamh.grady@sap.com", "password":"test4", "age":20, "city":"Dublin"},
+    "employee4":{"name":"niamh", 
+                 "email":"niamh.grady@sap.com", 
+                 "password":"test4", 
+                 "age":20, 
+                 "city":"Dublin"},
+                 "niamhFriends":[{
+                    "name":"ernestas",
+                    "password":"test5",
+                    "age":20,
+                    "city":"Dublin"
+             }],
 
-    "employee5":{"name":"ernestas", "email":"ernestas.trakys@sap.com", "password":"test5", "age":20, "city":"Dublin"}
+    "employee5":{"name":"ernestas", 
+                 "email":"ernestas.trakys@sap.com", 
+                 "password":"test5", 
+                 "age":20, 
+                 "city":"Dublin"},
+                 "ernestasFriends":[{
+                    "name":"jordan",
+                    "password":"test1",
+                    "age":20,
+                    "city":"Dublin"
+             }]
 }
