@@ -1,7 +1,6 @@
 <mvc:View controllerName="visionBoardProject.internproject.controller.Friends"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m">
-
     <App>
         <pages>
             <Page title="{i18n>title}" >
@@ -28,7 +27,7 @@
                                         </columns>
                                     <SearchField liveChange=".onSearch"/>
                                 </Table>
-                                    
+                                <Button id="chatButton" text="{i18n>Chat with Friends!}" />
                                         <FlexBox direction="Column" class="sapUiMediumMarginTop">
                                             <FlexBox alignItems="Center" justifyContent="End" class="pageControls" >
                                                 <ObjectStatus id="searchStatus" text="" />
@@ -41,5 +40,4 @@
             </Page>
         </pages>
     </App>
-
 </mvc:View>
