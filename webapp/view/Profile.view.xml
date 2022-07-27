@@ -1,19 +1,21 @@
-<mvc:View controllerName="visionBoardProject.internproject.controller.Upload"
+<mvc:View controllerName="visionBoardProject.internproject.controller.Profile"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m">
 
+    
     <App>
         <pages>
             <Page title="{i18n>title}" >
                 <content>
-                    <Panel headerText="Upload">
+                    <Panel headerText="Profile">
                     <content>
+                    <ScrollContainer height='100rem' vertical='true'>
                     <Table 
                                 id="userSelectionTable"
                                 items="{/value}">
                                 <columns>
                                     <Column>
-                                        <Button id="homeButton" icon="{i18n>sap-icon://home}" text="{i18n>Home}" press=".homeRoute" />
+                                        <Button id="uploadButton" icon="{i18n>sap-icon://upload}" text="{i18n>Upload}" press=".uploadRoute" />
                                     </Column>
                                     <Column>
                                         <Button id="friendsButton" icon="{i18n>sap-icon://group}" text="{i18n>Friends}" press=".friendsRoute" />
@@ -22,47 +24,27 @@
                                         <Button id="notificationsButton" icon="{i18n>sap-icon://bell}" text="{i18n>Notifications}" press=".notificationsRoute" />
                                     </Column>
                                     <Column>
-                                        <Button id="profileButton" icon="{i18n>sap-icon://customer}"  text="{i18n>Profile}" press=".profileRoute" />
+                                        <Button id="homeButton" icon="{i18n>sap-icon://home}" text="{i18n>Home}" press=".homeRoute" />
                                     </Column>
-                                    
                                 </columns>
 
 
                                 <SearchField liveChange=".onSearch"/>
                             </Table>
                             
-                            <FlexBox direction="Column" class="sapUiLargeMarginTop">
-                                
+                            <FlexBox direction="Column" class="sapUiMediumMarginTop">
+                                <FlexBox alignItems="Center" justifyContent="End" class="pageControls" >
+                                    <ObjectStatus id="searchStatus" text="" />
+                                </FlexBox>
                             </FlexBox>
-                                        
+                    </ScrollContainer>        
+                                
+                           
                         
                         </content>
                     </Panel>
                     
                 </content>
-                <UploadCollection
-			id="UploadCollection"
-			uploadComplete="onUploadComplete"
-			fileDeleted="onFileDeleted">
-			<toolbar>
-				<OverflowToolbar>
-					<Breadcrumbs id="breadcrumbs" currentLocationText="{/currentLocationText}" links="{/history}">
-						<Link press="onBreadcrumbPress" text="{name}" />
-					</Breadcrumbs>
-					<ToolbarSpacer />
-					<UploadCollectionToolbarPlaceholder />
-				</OverflowToolbar>
-			</toolbar>
-		</UploadCollection> 
-        <Input
-			placeholder="About Upload..."
-			ariaDescribedBy="descriptionNodeId"
-			description=""
-			width="400px"
-			fieldWidth="75%"
-            showClearIcon="true"
-			class="sapUiSmallMarginBottom" />
-		     
             </Page>
         </pages>
     </App>

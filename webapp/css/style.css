@@ -1,5 +1,5 @@
 /* Enter your custom styles here */
-.container {
+.container1 {
     margin: auto;
     width: 60%;
     height: 20px;
@@ -15,14 +15,28 @@
     align-items: center;
 }
 
-/*Trying to spread out the buttons proportionatly across the screen*/
-#userSelectionTable{
-    width : 100%;
-    padding : 15px;
-    border: 0%;
+#display_image{
+    width: 375px;
+    height: 200px;
+    border: 1px solid black;
+    background-position: center;
+    background-size: cover;
 }
 
-/* This is just a test to see if the button changes color, it does not! */
-#friendsButton{
-    color: aqua;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+    height: 100vh;
 }
+#display_image{
+    width: 375px;
+    height: 220px;
+    border: 1px solid black;
+    background-position: center;
+    background-size: cover;
+}
+
+/*  */

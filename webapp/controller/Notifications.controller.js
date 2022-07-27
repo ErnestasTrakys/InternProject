@@ -3,24 +3,22 @@ sap.ui.define([
     "visionBoardProject/internproject/controller/BaseController",
     "sap/ui/model/json/JSONModel",
     "sap/ui/model/Filter",
-    "sap/ui/model/FilterOperator",
-    "sap/ui/core/UIComponent"
+    "sap/ui/model/FilterOperator"
 ],
     /**
      * @param {typeof sap.ui.core.mvc.Controller} Controller
      */
-    function (BaseController, UIComponent) {
+    function (BaseController) {
         "use strict";
 
-        return BaseController.extend("visionBoardProject.internproject.controller.View1", {
+        return BaseController.extend("visionBoardProject.internproject.controller.Notifications", {
             onInit: function () {
-                
                 
             },
 
-          
+           
             
-
+           
         });
 
     });
