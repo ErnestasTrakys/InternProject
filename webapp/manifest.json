@@ -16,6 +16,10 @@
       "toolsId": "b98334c4-b9e7-49f3-a0f8-313eb178704a"
     },
     "dataSources": {
+        "my_global_json_model_data_source": {
+                   "uri": "controller/UploadCollectionData.json",
+                   "type": "JSON"
+                 },
       "mainService": {
         "uri": "/sap/opu/odata/",
         "type": "OData",
@@ -62,6 +66,10 @@
       "compact": true,
       "cozy": true
     },
+    "my_global_json_model":{
+               "type": "sap.ui.model.json.JSONModel",
+               "dataSource": "my_global_json_model_data_source"
+             },
     "models": {
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
@@ -94,6 +102,9 @@
         "type": "View",
         "bypassed": {
             "target": "notFound"
+        },
+        "internproject":{
+            
         }
         
       },
