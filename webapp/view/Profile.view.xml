@@ -2,7 +2,7 @@
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m">
 
-    
+    <!--profile button working -->
     <App>
         <pages>
             <Page title="{i18n>title}" >
