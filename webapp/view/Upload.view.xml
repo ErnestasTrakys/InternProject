@@ -1,6 +1,11 @@
 <mvc:View controllerName="visionBoardProject.internproject.controller.Upload"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
-    xmlns="sap.m">
+    xmlns:l="sap.ui.layout"
+	xmlns:u="sap.ui.unified"
+	xmlns="sap.m"
+	class="viewPadding"
+    xmlns:upload="sap.m.upload">
+
 
     <App>
         <pages>
@@ -40,6 +45,39 @@
                     </Panel>
                     
                 </content>
+<!-- 
+	<l:VerticalLayout>
+		<u:FileUploader
+			id="fileUploader"
+			name="myFileUpload"
+			uploadUrl="upload/"
+			tooltip="Upload your file to the local server"
+			uploadComplete="handleUploadComplete"
+			change="handleValueChange"
+			typeMissmatch="handleTypeMissmatch"
+			style="Emphasized"
+			fileType="txt,jpg"
+			placeholder="Choose a file for Upload...">
+				<u:parameters>
+					<u:FileUploaderParameter
+						name="Accept-CH"
+						value="Viewport-Width"/>
+					<u:FileUploaderParameter
+						name="Accept-CH"
+						value="Width"/>
+					<u:FileUploaderParameter
+						name="Accept-CH-Lifetime"
+						value="86400"/>
+				</u:parameters>
+			</u:FileUploader>
+		<Button
+			text="Upload File"
+			press="handleUploadPress"/>
+	</l:VerticalLayout> -->
+
+
+
+
                 <UploadCollection
 			id="UploadCollection"
 			maximumFilenameLength="55"
@@ -111,29 +149,16 @@
 					</statuses>
 				</UploadCollectionItem>
 			</items>
-		</UploadCollection>
-                <!-- <UploadCollection
-			id="UploadCollection"
-			uploadComplete="onUploadComplete"
-			fileDeleted="onFileDeleted">
-			<toolbar>
-				<OverflowToolbar>
-					<Breadcrumbs id="breadcrumbs" currentLocationText="{/currentLocationText}" links="{/history}">
-						<Link press="onBreadcrumbPress" text="{name}" />
-					</Breadcrumbs>
-					<ToolbarSpacer />
-					<UploadCollectionToolbarPlaceholder />
-				</OverflowToolbar>
-			</toolbar>
-		</UploadCollection>  -->
-        <Input
+		</UploadCollection> 
+                
+       <!-- <Input
 			placeholder="About Upload..."
 			ariaDescribedBy="descriptionNodeId"
 			description=""
 			width="400px"
 			fieldWidth="75%"
             showClearIcon="true"
-			class="sapUiSmallMarginBottom" />
+			class="sapUiSmallMarginBottom" /> -->
 		     
             </Page>
         </pages>
