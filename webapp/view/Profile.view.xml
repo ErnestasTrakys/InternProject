@@ -1,17 +1,22 @@
 <mvc:View controllerName="visionBoardProject.internproject.controller.Profile"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m">
+
     <App>
         <pages>
             <Page title="{i18n>title}" >
                 <content>
+                <Text
+				text="Trying to put an avatar in....:"
+				width="100%"
+				class="sapUiSmallMarginTop sapUiSmallMarginBegin sapUiMediumMarginBottom"/>
                     <Panel headerText="Profile">
                     <content>
                     <ScrollContainer height='100rem' vertical='true'>
-                    <p>This is a paragraph.</p>
                     <Table 
                                 id="userSelectionTable"
                                 items="{/value}">
+                                
                                 <columns>
                                     <Column>
                                         <Button id="uploadButton" icon="{i18n>sap-icon://upload}" text="{i18n>Upload}" press=".uploadRoute" />
@@ -33,6 +38,12 @@
                                 <FlexBox alignItems="Center" justifyContent="End" class="pageControls" >
                                     <ObjectStatus id="searchStatus" text="" />
                                 </FlexBox>
+                                <Avatar
+                                    src="sap-icon://customer"
+							        displaySize="XL"
+							        displayShape="Square"
+							        showBorder="true"
+							        press="onPress"/>
                             </FlexBox>
                     </ScrollContainer>        
                                         
