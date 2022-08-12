@@ -26,11 +26,10 @@ sap.ui.define([
                 this.getView().setModel(new sap.ui.model.json.JSONModel(sPath));
                 
             },
-        //    handleItemClick: function(oEvent) {
-        //         var demoToast = this.getView().byId("demoToast");
-        //         demoToast.setText("Event itemClick fired.");
-        //         demoToast.show();
-        //     } 
+            handleMessageToastPress: function(oEvent) {
+                var msg = 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy\r\n eirmod.';
+                MessageToast.show(msg);
+            }
 
           
             

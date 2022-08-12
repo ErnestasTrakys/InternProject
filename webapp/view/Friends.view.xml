@@ -9,9 +9,7 @@
                     <Panel headerText="Friends">
                         <content>
                             <ScrollContainer height='100rem' vertical='true'>
-                                <Table 
-                                        id="userSelectionTable"
-                                        items="{/value}">
+                                <Table>
                                         <columns>
                                             <Column>
                                                 <Button id="uploadButton" icon="{i18n>sap-icon://upload}" text="{i18n>Upload}" press=".uploadRoute" />
@@ -26,14 +24,23 @@
                                                 <Button id="profileButton" icon="{i18n>sap-icon://customer}" text="{i18n>Profile}" press=".profileRoute" />
                                             </Column>      
                                         </columns>
-                                    <SearchField liveChange=".onSearch"/>
+                                    
                                 </Table>
                                     
-                                        <FlexBox direction="Column" class="sapUiMediumMarginTop">
-                                            <FlexBox alignItems="Center" justifyContent="End" class="pageControls" >
-                                                <ObjectStatus id="searchStatus" text="" />
-                                            </FlexBox>
-                                        </FlexBox>
+                                        <Title level="H3"
+                                    text="Friends"
+                                    class="sapUiTinyMargin"
+                                    wrappingType="Normal"/>
+                                    <List items="{/friends}" press="handleMessageToastPress">
+                                    
+                                        <FeedListItem
+                                            sender="{fullName}"
+                                            icon="{thumbnailUrl}"
+                                            timestamp="{date}"
+                                            
+                                />
+                                        
+                                    </List> 
                             </ScrollContainer>
                         </content>
                     </Panel>

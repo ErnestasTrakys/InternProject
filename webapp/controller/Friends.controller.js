@@ -13,6 +13,8 @@ sap.ui.define([
 
         return BaseController.extend("visionBoardProject.internproject.controller.Friends", {
             onInit: function () {
+                var sPath = jQuery.sap.getModulePath("visionBoardProject.internproject", "/data/FriendCollectionData.json");
+                this.getView().setModel(new sap.ui.model.json.JSONModel(sPath));
                 
             },
 

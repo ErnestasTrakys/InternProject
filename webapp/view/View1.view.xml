@@ -10,9 +10,7 @@
                     <Panel headerText="Home">
                     <content>
                     <ScrollContainer height='100rem' vertical='true'>
-                    <Table 
-                                id="userSelectionTable"
-                                items="{/value}">
+                    <Table >
                                 <columns>
                                     <Column>
                                         <Button id="uploadButton" icon="{i18n>sap-icon://upload}" text="{i18n>Upload}" press=".uploadRoute" class="sapUiTinyMarginEnd" />
@@ -26,25 +24,24 @@
                                     <Column >
                                         <Button id="profileButton" icon="{i18n>sap-icon://customer}" text="{i18n>Profile}" press=".profileRoute" />
                                     </Column>
-                                    
                                 </columns>
-
-                                <SearchField liveChange=".onSearch"/>
                             </Table>
 
-                            <SearchField width="20%" liveChange=".onSearch"/>
+                            <SearchField width="20%" liveChange=".onSearch" items="/items" />
 
                                 <Title level="H3"
                                     text="Feed"
                                     class="sapUiTinyMargin"
                                     wrappingType="Normal"/>
-                                    <List items="{/items}">
+                                    <List items="{/items}" press="handleMessageToastPress">
+                                    
                                         <FeedListItem
-                                            sender="{fileName}"
+                                            sender="{author}"
                                             icon="{thumbnailUrl}"
                                             text="{text}"
+                                            timestamp="{date}"
                                             
-            />
+                                />
                                         
                                     </List> 
                     </ScrollContainer>

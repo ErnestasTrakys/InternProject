@@ -1,14 +1,16 @@
 {
 	"items" : [
 		{
-			"documentId" : "64469d2f-b3c4-a517-20d6-f91ebf85b9da",
+			"documentId" : "64469d2f-b3c4-a517-20d6-f9asdgtada",
 			"visibleEdit" : true,
 			"visibleDelete" : true,
-			"fileName" : "camera.jpg",
+			"fileName" : "commerceDelivery.jpg",
 			"mimeType" : "image/jpg",
-			"thumbnailUrl" : "/data/files/camera.jpg",
-			"url" : "/data/files/camera.jpg",
-            "text" : "I uploaded this camera",
+            "author" : "Ernestas",
+			"thumbnailUrl" : "/data/files/commerceDelivery.jpg",
+			"url" : "/data/files/commerceDelivery.jpg",
+            "text" : "Preparing slides for next commerce delivery. Will be delivering a presentation on our Cloud Platform to our new customer. Extended research was done within the team.",
+            "date" : "2022-08-14",
 			"attributes":[
 				{
 					"title":"Uploaded By",
@@ -16,12 +18,12 @@
 				},
 				{
 					"title":"Uploaded On",
-					"text":"2022-08-08"
+					"text":"2022-08-14"
 				},
 				{
 					"title":"File Size",
 					"type" :"size",
-					"text":"50"
+					"text":"200"
 				},
 				{
 					"title":"Version",
@@ -42,9 +44,11 @@
 			"visibleDelete" : true,
 			"fileName" : "code.jpg",
 			"mimeType" : "image/jpg",
+            "author" : "Ernestas",
 			"thumbnailUrl" : "/data/files/code.jpg",
 			"url" : "/data/files/code.jpg",
             "text" : "Working on SAP Commerce custom pages.",
+            "date" : "2022-08-12",
 			"attributes":[
 				{
 					"title":"Uploaded By",
@@ -58,6 +62,44 @@
 					"title":"File Size",
 					"type" :"size",
 					"text":"120"
+				},
+				{
+					"title":"Version",
+					"text":"1"
+				}
+			],
+			"statuses":[
+				{
+					"title":"Status",
+					"text":"Uploaded",
+					"state":"None"
+				}
+			]
+        },
+        {
+			"documentId" : "64469d2f-b3c4-a517-20d6-f91ebf85b9da",
+			"visibleEdit" : true,
+			"visibleDelete" : true,
+			"fileName" : "camera.jpg",
+            "author" : "Ernestas",
+			"mimeType" : "image/jpg",
+			"thumbnailUrl" : "/data/files/camera.jpg",
+			"url" : "/data/files/camera.jpg",
+            "text" : "I uploaded this camera",
+            "date" : "2022-08-08",
+			"attributes":[
+				{
+					"title":"Uploaded By",
+					"text":"Ernestas"
+				},
+				{
+					"title":"Uploaded On",
+					"text":"2022-08-08"
+				},
+				{
+					"title":"File Size",
+					"type" :"size",
+					"text":"50"
 				},
 				{
 					"title":"Version",

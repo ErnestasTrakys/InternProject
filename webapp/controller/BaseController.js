@@ -53,7 +53,7 @@ sap.ui.define([
                 aFilter.push(new Filter("title", FilterOperator.Contains, sQuery));
             }
             var oList = this.byId("userGroup"); //userGroup, a db of usernames
-            var oBinding = oList.getBinding("items"); //items not in xml yet
+            var oBinding = oList.getBinding("/items"); //items not in xml yet
             oBinding.filter(aFilter);
         }
 
