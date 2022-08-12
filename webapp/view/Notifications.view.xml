@@ -38,7 +38,31 @@
                                     <ObjectStatus id="searchStatus" text="" />
                                 </FlexBox>
                             </FlexBox>
+
+                            <Title level="H3"
+                                    text="Notifications"
+                                    class="sapUiTinyMargin"
+                                    wrappingType="Normal"/>
+                            <List items="{/notifications}" press="handleMessageToastPress">
+                            <NotificationListItem
+				title="{title}"
+				description="{description}"
+				showCloseButton="true"
+				datetime="{datetime}"
+				unread= "true"
+				priority="none"
+				close=".onItemClose"
+				press=".onListItemPress"
+				authorName="{authorname}"
+				authorPicture="{authorthumbnailurl}">
+				<buttons>
+					<Button text="Accept All Requested Information" press=".onAcceptPress" />
+					<Button text="Reject All Requested Information" press=".onRejectPress" />
+				</buttons>
+			</NotificationListItem>
+            </List>
                     </ScrollContainer>        
+                                
                                 
                            
                         

@@ -13,7 +13,8 @@ sap.ui.define([
 
         return BaseController.extend("visionBoardProject.internproject.controller.Notifications", {
             onInit: function () {
-                
+                var sPath = jQuery.sap.getModulePath("visionBoardProject.internproject", "/data/NotificationCollectionData.json");
+                this.getView().setModel(new sap.ui.model.json.JSONModel(sPath));
             },
 
            
