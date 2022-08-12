@@ -6,8 +6,9 @@
 			"visibleDelete" : true,
 			"fileName" : "camera.jpg",
 			"mimeType" : "image/jpg",
-			"thumbnailUrl" : "file://..//home/user/projects/InternProject/webapp/data/files/camera.jpg",
-			"url" : "file://..//home/user/projects/InternProject/webapp/data/files/camera.jpg",
+			"thumbnailUrl" : "/data/files/camera.jpg",
+			"url" : "/data/files/camera.jpg",
+            "text" : "I uploaded this camera",
 			"attributes":[
 				{
 					"title":"Uploaded By",
@@ -29,8 +30,44 @@
 			],
 			"statuses":[
 				{
-					"title":"First status' title",
-					"text":"First status' text",
+					"title":"Status",
+					"text":"Uploaded",
+					"state":"None"
+				}
+			]
+        },
+        {
+			"documentId" : "64469d2f-b3c4-a517-20d6-f91hdfgttryd",
+			"visibleEdit" : true,
+			"visibleDelete" : true,
+			"fileName" : "code.jpg",
+			"mimeType" : "image/jpg",
+			"thumbnailUrl" : "/data/files/code.jpg",
+			"url" : "/data/files/code.jpg",
+            "text" : "Working on SAP Commerce custom pages.",
+			"attributes":[
+				{
+					"title":"Uploaded By",
+					"text":"Ernestas"
+				},
+				{
+					"title":"Uploaded On",
+					"text":"2022-08-12"
+				},
+				{
+					"title":"File Size",
+					"type" :"size",
+					"text":"120"
+				},
+				{
+					"title":"Version",
+					"text":"1"
+				}
+			],
+			"statuses":[
+				{
+					"title":"Status",
+					"text":"Uploaded",
 					"state":"None"
 				}
 			]

@@ -118,6 +118,7 @@
             "NotFound.view.xml",
             "Friends.view.xml",
             "App.view.xml",
+            "App.controller.js",
             "manifest.json"
         ]
             

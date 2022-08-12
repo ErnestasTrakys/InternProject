@@ -16,19 +16,19 @@ sap.ui.define([
     /**
      * @param {typeof sap.ui.core.mvc.Controller} Controller
      */
-    function (BaseController, jQuery, MessageToast, MessageBox, UploadCollectionItem, JSONModel, deepExtend, UploadCollectionParameter, FileSizeFormat) {
+    function (BaseController, MessageToast, MessageBox, UploadCollectionItem, JSONModel, deepExtend, UploadCollectionParameter, FileSizeFormat) {
         "use strict";
 
         return BaseController.extend("visionBoardProject.internproject.controller.Upload", {
 
                 onInit: function() {
-                    var sPath;
         
                     // set mock data
-                    sPath = sap.ui.require.toUrl("file://..//home/user/projects/InternProject/webapp/data/UploadCollectionData.json");
-                    this.getView().setModel(new sap.ui.model.json.JSONModel(sPath));
+                    // sPath = sap.ui.require.toUrl("file://..//home/user/projects/InternProject/webapp/data/UploadCollectionData.json");
+                    // this.getView().setModel(new sap.ui.model.json.JSONModel(sPath));
+                    var sPath = jQuery.sap.getModulePath("visionBoardProject.internproject", "/data/UploadCollectionData.json");
+                this.getView().setModel(new sap.ui.model.json.JSONModel(sPath));
                     
-                    //https://drive.google.com/file/d/1NUPV9NnIFuH-t5yg4pKejLFZfE8SEqcB/view?usp=sharing
         
                     // Sets the text to the label
                     this.byId("UploadCollection").addEventDelegate({
@@ -41,17 +41,17 @@ sap.ui.define([
                     this.bIsUploadVersion = false;
                 },
         
-                formatAttribute: function(sValue, sType) {
-                    if (sType === "size") {
-                        return FileSizeFormat.getInstance({
-                            binaryFilesize: false,
-                            maxFractionDigits: 1,
-                            maxIntegerDigits: 3
-                        }).format(sValue);
-                    } else {
-                        return sValue;
-                    }
-                },
+                // formatAttribute: function(sValue, sType) {
+                //     if (sType === "size") {
+                //         return FileSizeFormat.getInstance({
+                //             binaryFilesize: false,
+                //             maxFractionDigits: 1,
+                //             maxIntegerDigits: 3
+                //         }).format(sValue);
+                //     } else {
+                //         return sValue;
+                //     }
+                // },
         
                 onChange: function(oEvent) {
                     var oUploadCollection = oEvent.getSource();

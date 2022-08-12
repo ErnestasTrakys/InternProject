@@ -1,8 +1,8 @@
 <mvc:View controllerName="visionBoardProject.internproject.controller.View1"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
-    xmlns="sap.m">
+            xmlns:main="sap.ui.webc.main"
+            xmlns="sap.m">
 
-           
             <App>
         <pages>
             <Page title="{i18n>title}" >
@@ -32,12 +32,21 @@
                                 <SearchField liveChange=".onSearch"/>
                             </Table>
 
-                            <SearchField liveChange=".onSearch"/>
-                                <FlexBox direction="Column" class="sapUiMediumMarginTop">
-                                    <FlexBox alignItems="Center" justifyContent="End" class="pageControls" >
-                                        <ObjectStatus id="searchStatus" text="" />
-                                    </FlexBox>
-                                </FlexBox>
+                            <SearchField width="20%" liveChange=".onSearch"/>
+
+                                <Title level="H3"
+                                    text="Feed"
+                                    class="sapUiTinyMargin"
+                                    wrappingType="Normal"/>
+                                    <List items="{/items}">
+                                        <FeedListItem
+                                            sender="{fileName}"
+                                            icon="{thumbnailUrl}"
+                                            text="{text}"
+                                            
+            />
+                                        
+                                    </List> 
                     </ScrollContainer>
                                 
                            
