@@ -1,0 +1,59 @@
+{
+	"friends" : [
+		{
+    "userId" : "64469d2f-b3c4-a517-20d6-fgfghfjnhgdfdgsfgsda",
+    "visibleEdit" : true,
+    "visibleDelete" : true,
+    "fullName" : "Ernestas Trakys",
+    "username" : "ernestas123",
+    "thumbnailUrl" : "/data/files/ernestas.jpg",
+    "url" : "/data/files/ernestas.jpg",
+    "text" : "I uploaded this camera",
+    "date" : "Joined : 2022-01-26"
+        },
+        {
+            "userId" : "64469d2f-b3c4-a517-20d6-dfjghjkhhfjkgjh",
+            "visibleEdit" : true,
+            "visibleDelete" : true,
+            "fullName" : "Megan Cash",
+            "username" : "meganc123",
+            "thumbnailUrl" : "/data/files/megan.jpg",
+            "url" : "/data/files/megan.jpg",
+            "text" : "",
+            "date" : "Joined : 2022-01-26"
+                },
+                {
+                    "userId" : "64469d2f-b3c4-a517-20d6-htfdrgf615",
+                    "visibleEdit" : true,
+                    "visibleDelete" : true,
+                    "fullName" : "Niamh Grady",
+                    "username" : "niamg123",
+                    "thumbnailUrl" : "/data/files/niamh.jpg",
+                    "url" : "/data/files/niamh.jpg",
+                    "text" : "",
+                    "date" : "Joined : 2022-01-26"
+                        },
+                        {
+                            "userId" : "64469d2f-b3c4-a517-20d6-fgfghfjnhgdfdgsfgsda",
+                            "visibleEdit" : true,
+                            "visibleDelete" : true,
+                            "fullName" : "Gabriel Ariesan",
+                            "username" : "gabriela123",
+                            "thumbnailUrl" : "/data/files/gabriel.jpg",
+                            "url" : "/data/files/gabriel.jpg",
+                            "text" : "",
+                            "date" : "Joined : 2022-01-26"
+                                },
+                                {
+                                    "userId" : "64469d2f-b3c4-a517-20d6-fgfghfjnhgdfdgsfgsda",
+                                    "visibleEdit" : true,
+                                    "visibleDelete" : true,
+                                    "fullName" : "Jordan Murphy",
+                                    "username" : "jordanm123",
+                                    "thumbnailUrl" : "/data/files/jordan.jpg",
+                                    "url" : "/data/files/jordan.jpg",
+                                    "text" : "",
+                                    "date" : "Joined : 2022-01-26"
+                                        }
+    ]
+}

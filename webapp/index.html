@@ -14,12 +14,14 @@
         id="sap-ui-bootstrap"
         src="resources/sap-ui-core.js"
         data-sap-ui-theme="sap_fiori_3"
+        data-sap-ui-libs="sap.ui.commons,sap.ui.table"
         data-sap-ui-resourceroots='{
-            "visionBoardProject.internproject": "./"
+            "visionBoardProject.internproject": "./","dataFolder": "data"
         }'
         data-sap-ui-compatVersion="edge"
         data-sap-ui-async="true"
         data-sap-ui-frameOptions="trusted"
+        data-sap-ui-oninit="module:sap/ui/core/ComponentSupport"
     ></script>
     <script id="locate-reuse-libs" src="./utils/locate-reuse-libs.js"
         data-sap-ui-manifest-uri="./manifest.json"

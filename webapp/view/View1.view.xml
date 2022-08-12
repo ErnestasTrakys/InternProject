@@ -1,18 +1,16 @@
 <mvc:View controllerName="visionBoardProject.internproject.controller.View1"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
-    xmlns="sap.m">
+            xmlns:main="sap.ui.webc.main"
+            xmlns="sap.m">
 
-           
-        <App>
+            <App>
         <pages>
             <Page title="{i18n>title}" >
                 <content>
                     <Panel headerText="Home">
                     <content>
                     <ScrollContainer height='100rem' vertical='true'>
-                    <Table 
-                            id="userSelectionTable"
-                            items="{/value}">
+                    <Table >
                                 <columns>
                                     <Column>
                                         <Button id="uploadButton" icon="{i18n>sap-icon://upload}" text="{i18n>Upload}" press=".uploadRoute" class="sapUiTinyMarginEnd" />
@@ -26,18 +24,26 @@
                                     <Column >
                                         <Button id="profileButton" icon="{i18n>sap-icon://customer}" text="{i18n>Profile}" press=".profileRoute" />
                                     </Column>
-                                    
                                 </columns>
-
-                                <SearchField liveChange=".onSearch"/>
                             </Table>
 
-                            <SearchField liveChange=".onSearch"/>
-                                <FlexBox direction="Column" class="sapUiMediumMarginTop">
-                                    <FlexBox alignItems="Center" justifyContent="End" class="pageControls" >
-                                        <ObjectStatus id="searchStatus" text="" />
-                                    </FlexBox>
-                                </FlexBox>
+                            <SearchField width="20%" liveChange=".onSearch" items="/items" />
+
+                                <Title level="H3"
+                                    text="Feed"
+                                    class="sapUiTinyMargin"
+                                    wrappingType="Normal"/>
+                                    <List items="{/items}" press="handleMessageToastPress">
+                                    
+                                        <FeedListItem
+                                            sender="{author}"
+                                            icon="{thumbnailUrl}"
+                                            text="{text}"
+                                            timestamp="{date}"
+                                            
+                                />
+                                        
+                                    </List> 
                     </ScrollContainer>
                                 
                            
