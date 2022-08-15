@@ -38,6 +38,26 @@
                                     <ObjectStatus id="searchStatus" text="" />
                                 </FlexBox>
                             </FlexBox>
+
+                            <Title level="H3"
+                                    text="Notifications"
+                                    class="sapUiTinyMargin"
+                                    wrappingType="Normal"/>
+                            <List items="{/notifications}" press="handleMessageToastPress" >
+                            <NotificationListItem
+				title="{title}"
+				description="{description}"
+				showCloseButton="true"
+				datetime="{datetime}"
+				unread= "true"
+				priority="Low"
+				close=".onItemClose"
+				press=".onListItemPress"
+				authorName="{authorname}"
+				authorPicture="{authorthumbnailurl}">
+				
+			</NotificationListItem>
+            </List>
                     </ScrollContainer>        
                                 
                            

@@ -1,0 +1,28 @@
+{
+	"notifications" : [
+		{
+    "userId" : "64469d2f-b3c4-a517-20d6-fhdggfhjgjfhn",
+    "visibleEdit" : true,
+    "visibleDelete" : true,
+    "title" : "Gabriel Ariesan",
+    "authorName" : "Gabriel Ariesan",
+    "username" : "gariela123",
+    "authorthumbnailurl" : "/data/files/gabriel.jpg",
+    "url" : "/data/files/gabriel.jpg",
+    "description" : "Liked your recent upload.",
+    "datetime" : "2022-08-16"
+        },
+    {
+    "userId" : "64469d2f-b3c4-a517-20d6-bvnfdth",
+    "visibleEdit" : true,
+    "visibleDelete" : true,
+    "title" : "Niamh Grady",
+    "authorName" : "Niamh Grady",
+    "username" : "niamhg123",
+    "authorthumbnailurl" : "/data/files/niamh.jpg",
+    "url" : "/data/files/niamh.jpg",
+    "description" : "Commented on a recent upload.",
+    "datetime" : "2022-08-17"
+        }
+    ]
+}
