@@ -127,7 +127,7 @@ sap.ui.define([
                     // delay the success message for to notice onChange message
                     setTimeout(function() {
                         MessageToast.show("UploadComplete event triggered.");
-                    }, 4000);
+                    }, 400);
                 },
         
                 onBeforeUploadStarts: function(oEvent) {

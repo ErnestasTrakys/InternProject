@@ -34,6 +34,7 @@ sap.ui.define([
                
             this.getRouter().getTargets().display("TargetView1");
         },
+
         
 
         friendsRoute: function () {

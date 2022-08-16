@@ -18,9 +18,18 @@
                                     </Column>
                                     <Column>
                                         <Button id="friendsButton" icon="{i18n>sap-icon://group}" text="{i18n>Friends}" press=".friendsRoute" class="sapUiTinyMarginEnd" />
+                                        
                                     </Column>
                                     <Column>
-                                        <Button id="notificationsButton" icon="{i18n>sap-icon://bell}" text="{i18n>Notifications}" press=".notificationsRoute" class="sapUiTinyMarginEnd" />
+                                        <Button id="notificationsButton" icon="{i18n>sap-icon://bell}" text="{i18n>Notifications}" press=".notificationsRoute" class="sapUiTinyMarginEnd"> 
+                                        <customData>
+                                    <BadgeCustomData
+                                        key="badge"
+                                        value="2"
+                                        visible="true"/>
+                                </customData> 
+                                </Button>
+
                                     </Column>
                                     <Column >
                                         <Button id="profileButton" icon="{i18n>sap-icon://customer}" text="{i18n>Profile}" press=".profileRoute" class="sapUiTinyMarginEnd" />

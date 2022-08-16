@@ -18,7 +18,14 @@
                                                 <Button id="homeButton" icon="{i18n>sap-icon://home}" text="{i18n>Home}" press=".homeRoute" />
                                             </Column>
                                             <Column>
-                                                <Button id="notificationsButton" icon="{i18n>sap-icon://bell}" text="{i18n>Notifications}" press=".notificationsRoute" />
+                                                <Button id="notificationsButton" icon="{i18n>sap-icon://bell}" text="{i18n>Notifications}" press=".notificationsRoute" class="sapUiTinyMarginEnd"> 
+                                                    <customData>
+                                                <BadgeCustomData
+                                                    key="badge"
+                                                    value="2"
+                                                    visible="true"/>
+                                            </customData> 
+                                            </Button>
                                             </Column>
                                             <Column>
                                                 <Button id="profileButton" icon="{i18n>sap-icon://customer}" text="{i18n>Profile}" press=".profileRoute" />
