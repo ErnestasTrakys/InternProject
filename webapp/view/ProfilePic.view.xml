@@ -1,0 +1,25 @@
+<mvc:View controllerName="visionBoardProject.internproject.controller.ProfilePic"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+  
+    
+    <App>
+        <pages>
+            <Page title="{i18n>title}" >
+                <content>
+                <Panel headerText="Change Profile Picture">
+                    <content>
+                        <FlexBox class="sapUiMediumMarginTop">  
+                        <Text text="You do not have the authorisations to complete this action. Please contact your manager to change your photo." width="100%"/>
+                        
+                        </FlexBox>
+                        <Button id="return" text="{i18n>Back to Profile Page}" press=".profileRoute" class="sapUiSmallMarginTop"/>
+                    </content>
+                </Panel>  
+                </content>
+            </Page>
+        </pages>
+    </App>
+
+</mvc:View>
+	

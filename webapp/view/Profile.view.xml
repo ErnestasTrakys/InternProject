@@ -9,41 +9,90 @@
                 <content>
                     <Panel headerText="Profile">
                     <content>
-                    <ScrollContainer height='100rem' vertical='true'>
+                    <ScrollContainer height='50rem' vertical='true'>
                     <Table 
-                                id="userSelectionTable"
-                                items="{/value}">
-                                <columns>
-                                    <Column>
-                                        <Button id="uploadButton" icon="{i18n>sap-icon://upload}" text="{i18n>Upload}" press=".uploadRoute" />
-                                    </Column>
-                                    <Column>
-                                        <Button id="friendsButton" icon="{i18n>sap-icon://group}" text="{i18n>Friends}" press=".friendsRoute" />
-                                    </Column>
-                                    <Column>
-                                        <Button id="notificationsButton" icon="{i18n>sap-icon://bell}" text="{i18n>Notifications}" press=".notificationsRoute" />
-                                    </Column>
-                                    <Column>
-                                        <Button id="homeButton" icon="{i18n>sap-icon://home}" text="{i18n>Home}" press=".homeRoute" />
-                                    </Column>
-                                </columns>
+                        id="userSelectionTable"
+                        items="{/value}">
+                            <columns>
+                                <Column>
+                                    <Button id="uploadButton" icon="{i18n>sap-icon://upload}" text="{i18n>Upload}" press=".uploadRoute" />
+                                </Column>
+                                <Column>
+                                    <Button id="friendsButton" icon="{i18n>sap-icon://group}" text="{i18n>Friends}" press=".friendsRoute" />
+                                </Column>
+                                <Column>
+                                    <Button id="notificationsButton" icon="{i18n>sap-icon://bell}" text="{i18n>Notifications}" press=".notificationsRoute" />
+                                </Column>
+                                <Column>
+                                    <Button id="homeButton" icon="{i18n>sap-icon://home}" text="{i18n>Home}" press=".homeRoute" />
+                                </Column>
+                            </columns>
+                        <SearchField liveChange=".onSearch"/>
+                    </Table>
 
-
-                                <SearchField liveChange=".onSearch"/>
-                            </Table>
-                            
-                            <FlexBox direction="Column" class="sapUiMediumMarginTop">
-                                <FlexBox alignItems="Center" justifyContent="End" class="pageControls" >
-                                    <ObjectStatus id="searchStatus" text="" />
-                                </FlexBox>
+                    <FlexBox direction="Row" class="sapUiMediumMarginTop">
+                        <FlexBox direction="Column" class="sapUiMediumMarginTop">
+                            <FlexBox alignItems="Center" justifyContent="End" class="pageControls" >
+                                <ObjectStatus id="searchStatus" text="" />
                             </FlexBox>
-                    </ScrollContainer>        
-                                
-                           
-                        
-                        </content>
+                            <FlexBox
+                                alignItems="Start"
+                                justifyContent="Start">
+                                <Avatar
+                                    class="sapUiSmallMarginTop sapUiSmallMarginBottom sapUiLargeMarginBegin"
+                                    initials="DU"
+                                    displaySize="XL"
+                                    backgroundColor="Transparent"
+                                    showBorder="true"
+                                    press="onPress">
+                                </Avatar>
+                            </FlexBox>
+                            <Button id="profilePic" text="{i18n>Change profile picture}" press=".profilePicRoute" class="sapUiMediumMarginBegin"/>
+                        </FlexBox>
+                        <FlexBox direction="Column" class="sapUiMediumMarginTop sapUiLargeMarginBegin">                            
+                            </FlexBox>
+                                <FlexBox direction="Column" class="sapUiMediumMarginTop sapUiLargeMarginBegin">
+                                <GenericTag text="No. of Friends"  design="StatusIconHidden" status="Success" class="sapUiSmallMarginBottom">
+					                <ObjectNumber state="Success" emphasized="false" number="5" unit="Friends" />
+				                </GenericTag>
+                                <GenericTag text="No. of Posts"  design="StatusIconHidden" status="Success" class="sapUiSmallMarginBottom sapUiSMediumMarginEnd">
+					                <ObjectNumber state="Success" emphasized="false" number="3" unit="Posts" />
+				                </GenericTag>
+                            </FlexBox>
+                        <FlexBox direction="Column" class="sapUiMediumMarginTop sapUiLargeMarginBegin">
+                            <GenericTag text="No. of Likes"  design="StatusIconHidden" status="Success" class="sapUiSmallMarginBottom sapUiSMediumMarginBegin">
+					            <ObjectNumber state="Success" emphasized="false" number="1" unit="Likes" />
+				            </GenericTag>
+                            <GenericTag text="No. of Comments"  design="StatusIconHidden" status="Success" class="sapUiSmallMarginBottom sapUiSMediumMarginBegin">
+					            <ObjectNumber state="Success" emphasized="false" number="1" unit="Comments" />
+				            </GenericTag>
+                        </FlexBox>
+                    </FlexBox>
+                                 
+                    <List headerText="Default User">
+                        <DisplayListItem
+                            label="User ID:"
+                            value="I123456" />
+                        <DisplayListItem
+                            label="Email Address:"
+                            value="default.user@sap.com" />
+                        <DisplayListItem
+                            label="Team Name:"
+                            value="Innovation Lab" />
+                        <DisplayListItem
+                            label="Role on Team:"
+                            value="Developer" />
+                        <DisplayListItem
+                            label="Date Joined Team:"
+                            value="2022-07-01" />
+                        <DisplayListItem
+                            label="Date Joined SAP:"
+                            value="2022-01-26" />
+                    </List>
+                    <Button id="editProfile" icon="{i18n>sap-icon://user-edit}" text="{i18n>Edit Profile}" press=".profilePicRoute" class="sapUiSmallMarginBegin"/>
+                    </ScrollContainer>    
+                    </content>
                     </Panel>
-                    
                 </content>
             </Page>
         </pages>

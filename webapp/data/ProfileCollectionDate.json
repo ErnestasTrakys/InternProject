@@ -1,0 +1,15 @@
+{
+	"profile" : [
+	{
+    "userId" : "I123456",
+    "visibleEdit" : true,
+    "visibleDelete" : true,
+    "username" : "Default User",
+    "userEmail" : "default.user@sap.com",
+    "userTeam" : "Innovation Lab",
+    "userRole" : "Developer",
+    "teamDate" : "2022-07-01",
+    "joinDate" : "2022-01-26"
+        }
+    ]
+}
