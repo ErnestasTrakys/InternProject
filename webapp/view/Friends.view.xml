@@ -26,6 +26,8 @@
                                         </columns>
                                     
                                 </Table>
+                                   <SearchField width="20%" liveChange=".onSearch" items="/friends" />
+
                                     
                                         <Title level="H3"
                                     text="Friends"

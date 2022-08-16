@@ -1,6 +1,7 @@
 sap.ui.define([
     //"sap/ui/core/mvc/Controller",
     "visionBoardProject/internproject/controller/BaseController",
+    "sap/m/MessageToast",
     "sap/ui/model/json/JSONModel",
     "sap/ui/model/Filter",
     "sap/ui/model/FilterOperator",
@@ -8,8 +9,7 @@ sap.ui.define([
     'sap/m/Dialog',
 	'sap/m/Image',
 	'sap/m/Button',
-    "sap/ui/core/format/DateFormat",
-	"sap/m/MessageToast"
+    "sap/ui/core/format/DateFormat"
 
 ],
     /**
@@ -26,10 +26,28 @@ sap.ui.define([
                 this.getView().setModel(new sap.ui.model.json.JSONModel(sPath));
                 
             },
-            handleMessageToastPress: function(oEvent) {
-                var msg = 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy\r\n eirmod.';
-                MessageToast.show(msg);
-            }
+            
+           
+            onlikePress : function () {
+                sap.m.MessageToast.show("Liked");
+            },
+
+            oncommentPress : function () {
+                //var oResponsivePopoverOpener = this.getView().byId("openResponsivePopoverButton");
+                //var oResponsivePopover = this.getView().byId("helloResponsivePopover");
+                //oResponsivePopover.showAt(oResponsivePopoverOpener);
+                sap.m.MessageToast.show("Comments temporarily disabled.")
+            },
+
+            handleClose: function () {
+			var oResponsivePopover = this.getView().byId("helloResponsivePopover");
+			oResponsivePopover.close();
+		    },
+            
+            onListItemPress: function (oEvent) {
+			    sap.m.MessageToast.show("Post by: " + oEvent.getSource().getTitle() + "  |  " + oEvent.getSource().getDatetime() );
+		    }
+
 
           
             

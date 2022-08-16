@@ -1,7 +1,8 @@
 <mvc:View controllerName="visionBoardProject.internproject.controller.View1"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
             xmlns:main="sap.ui.webc.main"
-            xmlns="sap.m">
+            xmlns="sap.m"
+            xmlns:l="sap.ui.layout">
 
             <App>
         <pages>
@@ -22,9 +23,11 @@
                                         <Button id="notificationsButton" icon="{i18n>sap-icon://bell}" text="{i18n>Notifications}" press=".notificationsRoute" class="sapUiTinyMarginEnd" />
                                     </Column>
                                     <Column >
-                                        <Button id="profileButton" icon="{i18n>sap-icon://customer}" text="{i18n>Profile}" press=".profileRoute" />
+                                        <Button id="profileButton" icon="{i18n>sap-icon://customer}" text="{i18n>Profile}" press=".profileRoute" class="sapUiTinyMarginEnd" />
                                     </Column>
                                 </columns>
+                                
+                                
                             </Table>
 
                             <SearchField width="20%" liveChange=".onSearch" items="/items" />
@@ -35,19 +38,34 @@
                                     wrappingType="Normal"/>
                                     <List items="{/items}" press="handleMessageToastPress">
                                     
-                                        <FeedListItem
-                                            sender="{author}"
-                                            icon="{thumbnailUrl}"
-                                            text="{text}"
-                                            timestamp="{date}"
-                                            
-                                />
+                                        <NotificationListItem
+                                            title="{author}"
+                                            authorPicture="{thumbnailUrl}"
+                                            description="{text}"
+                                            datetime="{date}"
+                                            showCloseButton="false"
+                                            unread="true"
+                                            press=".onListItemPress">
+                                            <buttons>
+                                            <Button id="openResponsivePopoverButton" icon="sap-icon://comment" text="Comment" press=".oncommentPress" />
+                                            <Button icon="sap-icon://heart-2" text="Like" press=".onlikePress" />
+                                        </buttons>
                                         
-                                    </List> 
-                    </ScrollContainer>
+                                </NotificationListItem>
                                 
+                                    </List> 
+                                    <ResponsivePopover id="helloResponsivePopover" headerText="Leave a comment...">
+                                        <Label text="Comment" required="true" showColon="true" />
+                                        <Input placeholder="Enter Comment" />
+                                        <!-- <footer>
+                                        <Button design="Emphasized" text="Comment" click=".handleClose"
+                                            class="sapUiTinyMarginTop sapUiTinyMarginBottom" />
+                                        </footer> -->
+                                        </ResponsivePopover>
+                                   
+                                    
+                    </ScrollContainer>
                            
-                        
                         </content>
                     </Panel>
                     
