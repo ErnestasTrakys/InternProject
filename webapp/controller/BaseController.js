@@ -46,6 +46,9 @@ sap.ui.define([
         profileRoute: function () {
             this.getRouter().getTargets().display("TargetProfile");        },
 
+        profilePicRoute: function () {
+            this.getRouter().getTargets().display("TargetProfilePic");        },
+
         onSearch: function (oEvent) {
             var aFilter = []; //filter options not created
             var sQuery = oEvent.getParameter("newValue");
