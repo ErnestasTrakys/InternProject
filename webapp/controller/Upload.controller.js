@@ -156,6 +156,11 @@ sap.ui.define([
                         MessageToast.show("Select an item to download");
                     }
                 },
+
+                onCreatePostItem: function () {
+                    var oUploadCollection = this.byId("UploadCollection");
+                    var aSelectedItems = oUploadCollection.getSelectedItems();
+                },
         
                 onVersion: function() {
                     var oUploadCollection = this.byId("UploadCollection");
@@ -171,12 +176,15 @@ sap.ui.define([
                         this.byId("downloadButton").setEnabled(true);
                         if (oUploadCollection.getSelectedItems().length === 1) {
                             this.byId("versionButton").setEnabled(true);
+                            this.byId("createPostButton").setEnabled(true);
                         } else {
                             this.byId("versionButton").setEnabled(false);
+                            this.byId("createPostButton").setEnabled(false);
                         }
                     } else {
                         this.byId("downloadButton").setEnabled(false);
                         this.byId("versionButton").setEnabled(false);
+                        this.byId("createPostButton").setEnabled(false);
                     }
                 },
         

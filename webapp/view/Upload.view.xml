@@ -98,6 +98,12 @@
 				<OverflowToolbar id="myId">
 					<Title id="attachmentTitle" />
 					<ToolbarSpacer />
+                    <Button
+						id="createPostButton"
+						text="Create Post"
+						press="onCreatePostItem"
+						enabled="false"
+						type="Transparent" />
 					<Button
 						id="downloadButton"
 						text="Download"
