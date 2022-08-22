@@ -1,0 +1,39 @@
+<mvc:View controllerName="visionBoardProject.internproject.controller.TableEdit"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+
+    <App>
+        <pages>
+        <Page title="{i18n>title}" >
+                <content>
+                <Panel headerText="Edit Profile">
+                    <content>
+	<List
+		headerText="Default User" >
+		<DisplayListItem label="User ID:" value="I123456"/>
+        <DisplayListItem label="Email Address:" value="default.user@sap.com"/>
+		<InputListItem label="Team Name:">
+			<Input
+				placeholder="Team"
+				value="Innovation Lab" />
+		</InputListItem>
+        <InputListItem label="Role on Team:">
+			<Input
+				placeholder="Role"
+				value="Developer" />
+		</InputListItem>
+        <InputListItem label="Date Joined Team:">
+			<Input
+				placeholder="Date Joined"
+				value="2022-07-01" />
+		</InputListItem>
+        <DisplayListItem label="Date Joined SAP:" value="2022-01-26"/>
+	</List>
+    <Button id="saveProfile" icon="{i18n>sap-icon://save}" text="{i18n>Save Changes}" press=".profileRoute" class="sapUiSmallMarginBegin"/>
+     </content>
+                </Panel>  
+                </content>
+            </Page>
+        </pages>
+    </App>
+</mvc:View>

@@ -111,8 +111,10 @@
             "Notifications.controller.js",
             "Profile.controller.js",
             "ProfilePic.controller.js",
+            "Table.controller.js",
             "Upload.controller.js",
             "View1.controller.js",
+            "TableEdit.view.xml",
             "Upload.view.xml",
             "Profile.view.xml",
             "ProfilePic.view.xml",
@@ -170,6 +172,13 @@
             "target": [
               "TargetProfilePic"
             ]
+          },
+          {
+            "name": "RouteTableEdit",
+            "pattern": "visionBoardProject.internproject.view",
+            "target": [
+              "TargetTableEdit"
+            ]
           }
       ],
       "targets": {
@@ -226,7 +235,15 @@
                 "controlAggregation": "pages",
                 "viewId": "ProfilePic",
                 "viewName": "ProfilePic"
-            }
+              },
+              "TargetTableEdit": {
+                "viewType": "XML",
+                "transition": "slide",
+                "clearControlAggregation": false,
+                "controlAggregation": "pages",
+                "viewId": "TableEdit",
+                "viewName": "TableEdit"
+              }
             }
       
       

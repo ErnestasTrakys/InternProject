@@ -50,6 +50,9 @@ sap.ui.define([
         profilePicRoute: function () {
             this.getRouter().getTargets().display("TargetProfilePic");        },
 
+        tableEditRoute: function () {
+            this.getRouter().getTargets().display("TargetTableEdit");        },
+
         onSearch: function (oEvent) {
             var aFilter = []; //filter options not created
             var sQuery = oEvent.getParameter("newValue");

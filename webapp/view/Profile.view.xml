@@ -89,7 +89,7 @@
                             label="Date Joined SAP:"
                             value="2022-01-26" />
                     </List>
-                    <Button id="editProfile" icon="{i18n>sap-icon://user-edit}" text="{i18n>Edit Profile}" press=".profilePicRoute" class="sapUiSmallMarginBegin"/>
+                    <Button id="editProfile" icon="{i18n>sap-icon://user-edit}" text="{i18n>Edit Profile}" press=".tableEditRoute" class="sapUiSmallMarginBegin"/>
                     </ScrollContainer>    
                     </content>
                     </Panel>
